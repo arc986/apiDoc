@@ -19,11 +19,17 @@ sequenceDiagram
     Api_sys-->>Api_biz: Response
 ```
 
-##### URL example
+##### URL
 
 ```http
 https://data.com/api/v1/{account}/
 ```
+
+###### URL Param
+Se definen las cabeceras del request a utilizar.
+| name | value | description | required |
+| ---- | ----- | ----------- | -------- |
+|      |       |             | Y or N   |
 
 ##### Header
 
