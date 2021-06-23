@@ -1,14 +1,14 @@
 # API_NAME
-Description API
+<The purpose of the service is described.>
 
 
 ##### Connections Diagram
 ```mermaid
 graph TD
 	id0((client)) --post--> /method
-	id1{{cw_pa_name-service_sys}} --rest api--> sub_system
-	subgraph mule
-	/method --request--> id1{{cw_pa_name-service_sys}}
+	id1{{service_sys}} --rest api--> sub_system
+	subgraph platform 
+	/method --request--> id1{{service_sys}}
 	end
 ```
 
@@ -16,47 +16,52 @@ graph TD
 
 ##### Connections info
 
-| name      | value                                              |
-| --------- | -------------------------------------------------- |
-| Namespace | data.com                                           |
-| Protocol  | http                                               |
-| Host      | 127.0.0.1                                          |
-| Port      | 0000                                               |
-| Path      | /API_NAME/v1/                                      |
-| Methods   | [/METHOD_NAME](methods/methods_name/apis_template) |
-|           | [/METHOD_NAME](methods/methods_name/apis_template) |
-| Databases | [/DATABASE_NAME](database/database_template)       |
-|           | [/DATABASE_NAME](database/database_template)       |
+| name                   | value                                                        |
+| ---------------------- | ------------------------------------------------------------ |
+| Protocol               | http                                                         |
+| Namespace              | example.com                                                  |
+| Host                   | 127.0.0.1                                                    |
+| Port                   | 80                                                           |
+| Path                   | /API_NAME/v1/                                                |
+| URL RAML Design Center | [RAML](http://127.0.0.1)                                     |
+| URL RAML Exchange      | [RAML](http://127.0.0.1)                                     |
+| Postman                | [Collection](postman/)                                       |
+| Documents              | [Documents](documents/)                                      |
+| Methods                | /METHOD_NAME [ [GET](methods/methods_name/GET/apis_template.md) \|[HEAD](methods/methods_name/GET/apis_template.md) \|[POST](methods/methods_name/GET/apis_template.md) \|[PATCH](methods/methods_name/GET/apis_template.md) \|[PUT](methods/methods_name/GET/apis_template.md) \|[DELETE](methods/methods_name/GET/apis_template.md) ] |
+|                        | /METHOD_NAME [ [GET](methods/methods_name/GET/apis_template.md) \|[HEAD](methods/methods_name/GET/apis_template.md) \|[POST](methods/methods_name/GET/apis_template.md) \|[PATCH](methods/methods_name/GET/apis_template.md) \|[PUT](methods/methods_name/GET/apis_template.md) \|[DELETE](methods/methods_name/GET/apis_template.md) ] |
+| Databases              | [DATABASE_NAME](database/database_template.md)               |
+|                        | [DATABASE_NAME](database/database_template.md)               |
+
+
+
+## Uses Cases
+
+This section defines the use cases related to a project and their compliance requirement.
+
+#### METHOD_NAME
+
+| Case                                             | method | Projects | type                          | Unitary test status                          | QA test Status                               | comments or considerations |
+| ------------------------------------------------ | ------ | -------- | ----------------------------- | -------------------------------------------- | -------------------------------------------- | -------------------------- |
+| [1](usescases/project_name/usescase_template.md) | GET    | example  | Prepay/Postpay/Recharge/other | <successful or failed or stopped or on hold> | <successful or failed or stopped or on hold> |                            |
 
 
 
 ## Service Information
 
-| Details           |      |
-| ----------------- | ---- |
-| **Projects**      |      |
-| **Project Lead**  |      |
-| **Provider**      |      |
-| **SOA Architect** |      |
+| Details           | Data         |
+| ----------------- | ------------ |
+| **Projects**      | data, promo, |
+| **Project Lead**  |              |
+| **Provider**      |              |
+| **SOA Architect** |              |
 
 
 
-## Changes History
+## API Changes History
 
-| Branch | Date | Project | Responsable | Comment |
-| ------ | ---- | ------- | ----------- | ------- |
-|        |      |         |             |         |
-|        |      |         |             |         |
-|        |      |         |             |         |
-|        |      |         |             |         |
-
-
-
-## Dependencies
-
-no se espesifica hasta el metodo
-
-| Legacy  Type | Description    | URI  Development           | System | Timeout |
-| ------------ | -------------- | -------------------------- | ------ | ------- |
-| Service      | Queue tracking | http://127.0.0.1:0000/data | test   | 60000   |
-
+| Branch     | Date | Project | Responsible | Comment |
+| ---------- | ---- | ------- | ----------- | ------- |
+| [master]() |      |         |             |         |
+|            |      |         |             |         |
+|            |      |         |             |         |
+|            |      |         |             |         |

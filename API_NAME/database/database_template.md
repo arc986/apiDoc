@@ -34,16 +34,16 @@ classDiagram
 ```
 #### Tables
 
-| name                                  | type            | Details |
-| ------------------------------------- | --------------- | ------- |
-| [/TABLE_NAME](tables/tables_template) | temp, table ... |         |
+| name                                  | type                      | Details |
+| ------------------------------------- | ------------------------- | ------- |
+| [/TABLE_NAME](tables/tables_template) | <temp or table or others> |         |
 
 
 
 ## Dependencies
 
-no se espesifica hasta el metodo
+In this section the dependencies of other tables, loading processes and dblinks are defined.
 
-| Database | Server         | Schemes | Tables | permissions |
-| -------- | -------------- | ------- | ------ | ----------- |
-| Service  | Queue tracking | datas   | test   | 60000       |
+| Database | Server | Schemes | Tables | permissions         |
+| -------- | ------ | ------- | ------ | ------------------- |
+|          |        |         |        | read, write, create |

@@ -36,7 +36,7 @@ classDiagram
 
 ##### Description
 
-indicar la funcionalidad de la tabla
+<The purpose of the table is defined.>
 
 ##### Constrains
 
